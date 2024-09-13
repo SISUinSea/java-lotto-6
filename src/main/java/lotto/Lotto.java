@@ -1,11 +1,13 @@
 package lotto;
 
 import java.util.List;
+import camp.nextstep.edu.missionutils.Randoms;
 
 public class Lotto {
-    private final List<Integer> numbers;
+    private List<Integer> numbers;
 
-    public Lotto(List<Integer> numbers) {
+    public Lotto() {
+        List<Integer> numbers = Randoms.pickUniqueNumbersInRange(1, 45, 6);
         validate(numbers);
         this.numbers = numbers;
     }
@@ -15,6 +17,4 @@ public class Lotto {
             throw new IllegalArgumentException();
         }
     }
-
-    // TODO: 추가 기능 구현
 }
