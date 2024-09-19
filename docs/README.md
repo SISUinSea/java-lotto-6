@@ -1,6 +1,6 @@
 # Model
 ## Amount
-- [ ] 로또 구입 금액을 저장하는 객체
+- [x] 로또 구입 금액을 저장하는 객체
 - [ ] 예외 처리 : 잘못된 입력값이 들어왔을 때 IllegalArgumentException을 발생시킨다.
     - [ ] 입력값이 1,000원으로 나누어 떨어지지 않았을 때 IllegalArgumentException를 발생시킨다.
 

@@ -1,9 +1,9 @@
 package lotto.model;
 
-public class Deposit {
-    int value;
+public class Amount {
+    private int value;
 
-    public Deposit(int value) {
+    public Amount(int value) {
         this.value = value;
     }
 
