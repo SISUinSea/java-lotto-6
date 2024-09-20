@@ -11,7 +11,7 @@
 - [x] 로또 번호들을 오름차순으로 정렬한다.
 
 ## WinningNumbers
-- [ ] 당첨 번호, 보너스 번호를 저장하는 객체
+- [x] 당첨 번호, 보너스 번호를 저장하는 객체
 - [ ] 예외 처리 : 잘못된 입력값이 들어왔을 때 IllegalArgumentException을 발생시킨다.
     - [ ] 보너스 번호가 당첨 번호와 중복될 경우 IllegalArgumentException를 발생시킨다.
 
