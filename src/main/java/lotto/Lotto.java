@@ -4,8 +4,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import camp.nextstep.edu.missionutils.Randoms;
-
 public class Lotto {
     private List<Integer> numbers;
 
@@ -26,5 +24,9 @@ public class Lotto {
         if (numbersSet.size() != numbers.size()) {
             throw new IllegalArgumentException();
         }
+    }
+
+    public List<Integer> getNumbers() {
+        return numbers;
     }
 }
