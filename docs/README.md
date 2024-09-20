@@ -17,9 +17,10 @@
 
 ## Result
 - [ ] 당첨 번호, 보너스 번호와 구매한 로또들을 비교해서 결과를 계산하는 객체
-- [ ] WinningNumbers와 Lotto를 비교해서 맞은 개수를 계산
-- [ ] bonusNumber와 Lotto를 비교해서 bonusNumber가 존재하는지 확인
-- [ ] 맞은 개수와 bonuse가 맞았는지를 통해서 로또가 몇 등인지 확인
-- [ ] 해당하는 등수의 상금을 더하기
+- [x] WinningNumbers와 Lotto를 비교해서 맞은 개수를 계산
+- [x] bonusNumber와 Lotto를 비교해서 bonusNumber가 존재하는지 확인
+- [x] 맞은 개수와 bonuse가 맞았는지를 통해서 로또가 몇 등인지 확인
+- [x] 해당하는 등수의 상금을 더하기
+- [x] 수익률을 계산하기
 
 
