@@ -75,7 +75,7 @@ public class Result {
         this.rateOfReturn = (this.totalWinningPrize / (double) value) * 100;
     }
 
-    public int[] getRankResult() {
+    public int[] getRank() {
         return rank;
     }
     public double getRateOfReturn() {
