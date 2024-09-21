@@ -5,13 +5,13 @@ import lotto.model.MyLottos;
 import lotto.model.Result;
 
 public class OutputView {
-    public void printMyLottosNumbers(MyLottos myLottos) {
+    public static void printMyLottosNumbers(MyLottos myLottos) {
         System.out.println(myLottos.getLottoCount() + "개를 구매했습니다.");
         for (Lotto myLotto : myLottos.getLottos()) {
             printMyOneLottoNumbers(myLotto);
         }
     }
-    private void printMyOneLottoNumbers(Lotto myLotto) {
+    private static void printMyOneLottoNumbers(Lotto myLotto) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         for (int myLottoNumber: myLotto.getNumbers()) {
@@ -22,7 +22,7 @@ public class OutputView {
         sb.append("]").append("\n");
         System.out.print(sb);
     }
-    public void printTotalStatus(Result result) {
+    public static void printTotalStatus(Result result) {
         int[] rank = result.getRank();
         double rateOfReturn = result.getRateOfReturn();
         System.out.println("당첨 통계");

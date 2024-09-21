@@ -6,7 +6,7 @@ import camp.nextstep.edu.missionutils.Console;
 
 
 public class InputView {
-    public int getPurchaseAmount() {
+    public static int getPurchaseAmount() {
         System.out.println("구입금액을 입력해 주세요.");
         String inputString = Console.readLine();
         int purchaseAmount;
@@ -18,7 +18,7 @@ public class InputView {
 
         return purchaseAmount;
     }
-    public List<Integer> getWinningNumbers() {
+    public static List<Integer> getWinningNumbers() {
         System.out.println("당첨 번호를 입력해 주세요.");
         String inputString = Console.readLine();
         String[] stringElements = inputString.split(",");
@@ -34,7 +34,7 @@ public class InputView {
 
         return result;
     }
-    public int getBonusNumber() {
+    public static int getBonusNumber() {
         System.out.println("보너스 번호를 입력해 주세요.");
         String inputString = Console.readLine();
         try {
