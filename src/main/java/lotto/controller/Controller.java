@@ -20,8 +20,8 @@ public class Controller {
     };
     public void run() {
         ProgressState progressState = ProgressState.START;
-        Amount amount;
-        MyLottos myLottos;
+        Amount amount = new Amount(0);
+        MyLottos myLottos = new MyLottos(0);
         WinningNumbers winningNumbers;
         List<Integer> winningNumberList = new ArrayList<>();
         int bonusNumber;
@@ -48,7 +48,7 @@ public class Controller {
                     progressState = ProgressState.DONE;
                 }
             } catch (IllegalArgumentException e) {
-                System.out.println("[Error] " + );
+                System.out.println("[Error] " + e.getMessage());
             }
         }
     }
