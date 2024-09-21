@@ -31,4 +31,7 @@ public class MyLottos {
     public List<Lotto> getLottos() {
         return myLottos;
     }
+    public int getLottoCount() {
+        return count;
+    }
 }
