@@ -4,12 +4,13 @@ import lotto.Lotto;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.ArrayList;
 
 import camp.nextstep.edu.missionutils.Randoms;
 
 public class MyLottos {
     private int count;
-    private List<Lotto> myLottos;
+    private List<Lotto> myLottos = new ArrayList<>();
 
     public MyLottos(int value) {
         // create count using amount value
@@ -22,8 +23,9 @@ public class MyLottos {
 
     private Lotto makeLotto() {
         List<Integer> numbers = Randoms.pickUniqueNumbersInRange(1, 45, 6);
-        Collections.sort(numbers);
-        Lotto lotto = new Lotto(numbers);
+        List<Integer> lottoNumbers = new ArrayList<>(numbers);
+        Collections.sort(lottoNumbers);
+        Lotto lotto = new Lotto(lottoNumbers);
 
         return lotto;
     }
