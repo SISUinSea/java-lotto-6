@@ -13,7 +13,7 @@ public class InputView {
         try {
             purchaseAmount = Integer.valueOf(inputString);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("로또 번호는 1부터 45 사이의 숫자여야 합니다.");
         }
 
         return purchaseAmount;
@@ -28,7 +28,7 @@ public class InputView {
             try {
                 result.add(Integer.valueOf(stringElement));
             } catch (NumberFormatException e) {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("로또 번호는 1부터 45 사이의 숫자여야 합니다.");
             }
         }
 
@@ -40,7 +40,7 @@ public class InputView {
         try {
             return Integer.valueOf(inputString);
         } catch (NumberFormatException e ) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("로또 번호는 1부터 45 사이의 숫자여야 합니다.");
         }
     }
 }

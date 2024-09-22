@@ -48,7 +48,7 @@ public class Controller {
                     progressState = ProgressState.DONE;
                 }
             } catch (IllegalArgumentException e) {
-                System.out.println("[Error] " + e.getMessage());
+                System.out.println("[ERROR] " + e.getMessage());
             }
         }
     }
